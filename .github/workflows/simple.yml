@@ -3,6 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs: 
+  cypress-run:
    runs-on: windows-lastest
    steps:
      - name: echo a string
@@ -15,4 +16,4 @@ jobs:
 
         node -v
         npm -v
-    shell: cmd    
+    

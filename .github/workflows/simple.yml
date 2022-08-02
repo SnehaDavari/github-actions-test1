@@ -3,7 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs: 
-   run-on: windows 10
+   run-on: ubuntu-lastest
    steps:
      - name: echo a string
 

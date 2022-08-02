@@ -3,7 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs: 
-   run-on: windows-latest
+   run-on: windows 10
    steps:
      - name: echo a string
 

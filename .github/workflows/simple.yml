@@ -3,7 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs: 
-  cypress-run:
+   
    runs-on: windows-latest
    steps:
      - name: echo a string

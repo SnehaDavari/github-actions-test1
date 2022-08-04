@@ -2,7 +2,7 @@ name: Shell Commands
 
 on:
  schedule: 
-   - cron: "0/5 * * * *"
+   - cron: "0 * * * *"
 jobs: 
     Simple_schedule:
       runs-on: windows-latest

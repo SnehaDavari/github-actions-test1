@@ -4,14 +4,15 @@ on:
  schedule: 
    - cron: "0/1 * * * *"
 jobs: 
-   runs-on: windows-latest
+    Simple_schedule:
+      runs-on: windows-latest
            
-   steps:
-     - name: echo a string
-       run: echo "Hello"
-     - name: multiline script
-       run: |
-        ls
-        node -v
-        npm -v
-    
+      steps:
+        - name: echo a string
+          run: echo "Hello"
+        - name: multiline script
+          run: |
+            ls
+            node -v
+            npm -v
+      

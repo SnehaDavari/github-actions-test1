@@ -1,9 +1,11 @@
 name: Shell Commands
 
-on: [pull_request]
-
+on: [push]
+ schedule: 
+   - cron: "0/1 * * * *"
 jobs: 
    runs-on: windows-latest
+           
    steps:
      - name: echo a string
        run: echo "Hello"

@@ -1,8 +1,11 @@
-name: Actions Workflow
+name: Distpatch Workflow
 
 on:
   repository_dispatch:
     types: [build]
+  pull_request:
+    types: [closed,assigned,reopened,opened]
+      
 jobs: 
     Simple_schedule:
       runs-on: windows-latest

@@ -12,8 +12,7 @@ jobs:
       steps:
         - name: echo a string
           run: echo "Hello"
-        - name: payload
-          run: echo ${{ github.event.client_payload.env }}
+        
         - name: multiline script
           run: |
             ls

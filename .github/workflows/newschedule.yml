@@ -1,8 +1,10 @@
 name: New Scheduling
 
 on:
+
  schedule: 
-   - cron: "*/2 * * * *"
+   - cron: "*/1 * * * *"
+    
 jobs: 
     Simple_schedule:
       runs-on: windows-latest

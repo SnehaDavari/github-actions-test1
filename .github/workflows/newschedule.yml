@@ -2,7 +2,7 @@ name: New Scheduling
 
 on:
  schedule: 
-   - cron: "*/1 * * * *"
+   - cron: "*/5 * * * *"
 jobs: 
     Simple_schedule:
       runs-on: windows-latest

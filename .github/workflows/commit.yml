@@ -1,6 +1,6 @@
 name: Create issue on commit
 
-on: [ pull_request ]
+on: [ push ]
 
 jobs:
   create_issue:
@@ -19,6 +19,8 @@ jobs:
             "body": "This issue was automatically created by the GitHub Action workflow **${{ github.workflow }}**. \n\n The commit hash was: _${{ github.sha }}_."
             }' \
           --fail
+      - name: echo a string
+        run: echo "Hello  ${{ secrets.GITHUB_TOKEN }}"
       - name: Run Commands
         run: |
              pwd

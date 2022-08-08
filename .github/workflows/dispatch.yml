@@ -1,0 +1,23 @@
+name: Distpatch Workflow
+
+on:
+  repository_dispatch:
+    types: [build]
+  pull_request:
+    types: [closed,assigned,reopened,opened]
+      
+jobs: 
+    Simple_schedule:
+      runs-on: windows-latest
+           
+      steps:
+        - name: echo a string
+          run: echo "Hello"
+        - name: payload
+          run: echo ${{ github.event.client_payload.env }}
+        - name: multiline script
+          run: |
+            ls
+            
+            
+      

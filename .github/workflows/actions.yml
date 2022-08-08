@@ -1,6 +1,6 @@
 name: Actions Workflow
 
-on: [push, pull-request]
+on: [push]
 
 jobs:
   run-github-actions:
@@ -9,7 +9,6 @@ jobs:
       - name: List Files
         run: |
               pwd 
-              ls
               echo $GITHUB_SHA
               echo $GITHUB_REPOSITORY
               echo $GITHUB_WORKSPACE

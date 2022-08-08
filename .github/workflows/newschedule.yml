@@ -14,5 +14,5 @@ jobs:
           run: |
             ls
             node -v
-            npm -v
+             
       

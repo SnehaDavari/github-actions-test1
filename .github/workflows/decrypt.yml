@@ -16,9 +16,9 @@ jobs:
 
         run: gpg --quiet --batch --yes --decrypt
 
-          --passphrase="$PASSPHRASE" --output $HOME/secretOut.txt
+          --passphrase="$PASSPHRASE" --output $HOME/sourceOut.txt
 
-          secret.txt.gpg
+          source.txt.gpg
 
         env:
 

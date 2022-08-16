@@ -16,7 +16,7 @@ jobs:
 
         run: gpg --quiet --batch --yes --decrypt
 
-          --passphrase="$PASSPHRASE" --output $HOME/source.txt
+          --passphrase="$PASSPHRASE" --output $HOME/sourceOut.txt
 
           source.txt.gpg
 
@@ -26,4 +26,4 @@ jobs:
 
       - name: print file
 
-        run: cat $HOME/source.txt
+        run: cat $HOME/sourceOut.txt

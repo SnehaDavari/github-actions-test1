@@ -1,4 +1,4 @@
-name: Create issue onn 
+name: Create issue on
 
 on: [ push ]
 

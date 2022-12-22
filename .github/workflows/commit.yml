@@ -1,4 +1,4 @@
-name: Create issue on committtt
+name: Create issue on 
 
 on: [ push ]
 

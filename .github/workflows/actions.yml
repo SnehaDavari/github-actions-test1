@@ -6,7 +6,7 @@ jobs:
   run-github-actions:
     runs-on: windows-latest
     steps:
-      - name: List Filesss
+      - name: List Files
         run: |
               pwd 
               echo $GITHUB_SHA

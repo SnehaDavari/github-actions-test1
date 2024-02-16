@@ -1,0 +1,6 @@
+[submodule "email/recipient.properties"]
+	path = email/recipient.properties
+	url = https://github.com/SnehaDavari/gitsubmoduledemo.git
+[submodule "email/recipients.properties"]
+	path = email/recipients.properties
+	url = https://github.com/SnehaDavari/gitsubmoduledemo.git
